@@ -13,10 +13,9 @@ const navLinks = [
   { name: "Contact", href: "#contact" },
 ];
 
-export default function Navbar() {
+export default function Navbar({ activeSection }) {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
-  const [activeSection, setActiveSection] = useState("home");
 
   // Handle scroll for navbar background
   useEffect(() => {
@@ -25,44 +24,8 @@ export default function Navbar() {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
-  // Intersection Observer for active section highlight
-  useEffect(() => {
-    const observerOptions = {
-      root: null,
-      rootMargin: "-20% 0px -80% 0px",
-      threshold: 0,
-    };
-
-    const observerCallback = (entries) => {
-      entries.forEach((entry) => {
-        if (entry.isIntersecting) {
-          setActiveSection(entry.target.id);
-        }
-      });
-    };
-
-    const observer = new IntersectionObserver(observerCallback, observerOptions);
-
-    navLinks.forEach((link) => {
-      const id = link.href.substring(1);
-      const element = document.getElementById(id);
-      if (element) observer.observe(element);
-    });
-
-    return () => observer.disconnect();
-  }, []);
-
-  const handleSmoothScroll = (e, href) => {
-    e.preventDefault();
+  const handleNavClick = () => {
     setIsMobileMenuOpen(false);
-    const targetId = href.replace("#", "");
-    const element = document.getElementById(targetId);
-    if (element) {
-      window.scrollTo({
-        top: element.offsetTop - 80, // Offset for navbar
-        behavior: "smooth",
-      });
-    }
   };
 
   return (
@@ -80,14 +43,15 @@ export default function Navbar() {
         <div className="flex items-center justify-between">
           
           {/* Logo */}
-          <div 
+          <a 
+            href="#home"
             className="flex-shrink-0 cursor-pointer"
-            onClick={(e) => handleSmoothScroll(e, "#home")}
+            onClick={handleNavClick}
           >
             <span className="text-2xl font-bold dark:text-white text-dark-bg tracking-tighter hover:opacity-80 transition-opacity">
               Dev<span className="text-gradient">Portfolio</span>
             </span>
-          </div>
+          </a>
 
           {/* Desktop Nav */}
           <nav className="hidden lg:flex items-center gap-8" aria-label="Desktop Navigation">
@@ -98,7 +62,7 @@ export default function Navbar() {
                   <li key={link.name}>
                     <a
                       href={link.href}
-                      onClick={(e) => handleSmoothScroll(e, link.href)}
+                      onClick={handleNavClick}
                       aria-current={isActive ? "page" : undefined}
                       className={`relative text-sm font-medium transition-colors py-2 group ${
                         isActive 
@@ -153,7 +117,7 @@ export default function Navbar() {
         isOpen={isMobileMenuOpen}
         navLinks={navLinks}
         activeSection={activeSection}
-        onLinkClick={handleSmoothScroll}
+        onLinkClick={handleNavClick}
       />
     </motion.header>
   );
