@@ -28,6 +28,8 @@ export default {
         'glow-orange': '0 0 20px rgba(249, 115, 22, 0.3)',
         'glow-yellow': '0 0 20px rgba(245, 158, 11, 0.3)',
         'glow-orange-lg': '0 0 30px rgba(249, 115, 22, 0.5)',
+        'glow-dark-primary': '0 0 30px rgba(14, 165, 233, 0.3)',
+        'glow-dark-secondary': '0 0 30px rgba(168, 85, 247, 0.3)',
       },
       animation: {
         'blob': 'blob 7s infinite',

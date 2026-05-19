@@ -10,7 +10,7 @@ export default function SectionTitle({ title, subtitle, alignment = "center" }) 
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true }}
         transition={{ duration: 0.5 }}
-        className="text-lg md:text-xl font-medium text-primary-orange mb-3 tracking-wider uppercase"
+        className="text-lg md:text-xl font-medium text-primary-orange dark:text-sky-500 mb-3 tracking-wider uppercase"
       >
         {subtitle}
       </motion.h3>

@@ -56,7 +56,7 @@ export default function Projects() {
           >
             {/* Project Image Placeholder */}
             <div className="w-full lg:w-3/5 group relative rounded-2xl overflow-hidden">
-              <div className="absolute inset-0 bg-primary-orange/20 group-hover:bg-transparent transition-colors duration-500 z-10 mix-blend-screen"></div>
+              <div className="absolute inset-0 bg-primary-orange/20 dark:bg-sky-500/20 group-hover:bg-transparent transition-colors duration-500 z-10 mix-blend-screen"></div>
               <div className="aspect-video dark:bg-dark-card bg-light-card border dark:border-dark-border border-light-border shadow-2xl flex items-center justify-center transform transition-transform duration-700 group-hover:scale-105">
                 <span className="text-xl font-medium dark:text-gray-500 text-gray-400">Project Screenshot Placeholder</span>
               </div>
@@ -64,8 +64,8 @@ export default function Projects() {
 
             {/* Project Details */}
             <div className={`w-full lg:w-2/5 flex flex-col ${index % 2 !== 0 ? 'lg:items-start text-left' : 'lg:items-end lg:text-right text-left'} relative z-20`}>
-              <p className="text-primary-orange font-mono text-sm mb-2">Featured Project</p>
-              <h3 className="text-2xl md:text-3xl font-bold dark:text-white text-dark-bg mb-6 hover:text-primary-orange transition-colors cursor-pointer">
+              <p className="text-primary-orange dark:text-sky-500 font-mono text-sm mb-2">Featured Project</p>
+              <h3 className="text-2xl md:text-3xl font-bold dark:text-white text-dark-bg mb-6 hover:text-primary-orange dark:hover:text-sky-500 transition-colors cursor-pointer">
                 {project.title}
               </h3>
               
@@ -80,10 +80,10 @@ export default function Projects() {
               </ul>
 
               <div className={`flex items-center gap-4 ${index % 2 !== 0 ? 'justify-start' : 'lg:justify-end justify-start'}`}>
-                <a href={project.github} className="dark:text-gray-300 text-gray-600 hover:text-primary-orange dark:hover:text-primary-orange transition-colors p-2">
+                <a href={project.github} className="dark:text-gray-300 text-gray-600 hover:text-primary-orange dark:hover:text-sky-500 transition-colors p-2">
                   <FiGithub size={22} />
                 </a>
-                <a href={project.external} className="dark:text-gray-300 text-gray-600 hover:text-primary-orange dark:hover:text-primary-orange transition-colors p-2">
+                <a href={project.external} className="dark:text-gray-300 text-gray-600 hover:text-primary-orange dark:hover:text-sky-500 transition-colors p-2">
                   <FiExternalLink size={22} />
                 </a>
               </div>
@@ -106,20 +106,20 @@ export default function Projects() {
               className="dark:bg-dark-card bg-light-card rounded-2xl p-8 border dark:border-dark-border border-light-border hover:-translate-y-2 transition-transform duration-300 flex flex-col group shadow-lg"
             >
               <div className="flex justify-between items-center mb-8">
-                <div className="text-primary-orange">
+                <div className="text-primary-orange dark:text-sky-500">
                   <FiFolder size={40} strokeWidth={1} />
                 </div>
                 <div className="flex gap-4">
-                  <a href={project.github} className="dark:text-gray-400 text-gray-500 hover:text-primary-orange transition-colors">
+                  <a href={project.github} className="dark:text-gray-400 text-gray-500 hover:text-primary-orange dark:hover:text-sky-500 transition-colors">
                     <FiGithub size={20} />
                   </a>
-                  <a href={project.external} className="dark:text-gray-400 text-gray-500 hover:text-primary-orange transition-colors">
+                  <a href={project.external} className="dark:text-gray-400 text-gray-500 hover:text-primary-orange dark:hover:text-sky-500 transition-colors">
                     <FiExternalLink size={20} />
                   </a>
                 </div>
               </div>
               
-              <h4 className="text-xl font-bold dark:text-white text-dark-bg mb-3 group-hover:text-primary-orange transition-colors">
+              <h4 className="text-xl font-bold dark:text-white text-dark-bg mb-3 group-hover:text-primary-orange dark:group-hover:text-sky-500 transition-colors">
                 {project.title}
               </h4>
               <p className="dark:text-gray-400 text-gray-600 text-sm leading-relaxed mb-8 flex-grow">

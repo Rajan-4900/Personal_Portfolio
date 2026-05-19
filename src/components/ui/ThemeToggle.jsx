@@ -30,7 +30,7 @@ export default function ThemeToggle({ className = "" }) {
           {theme === "dark" ? (
             <FiSun className="text-yellow-400" size={18} aria-hidden="true" />
           ) : (
-            <FiMoon className="text-primary-orange" size={18} aria-hidden="true" />
+            <FiMoon className="text-primary-orange dark:text-sky-500" size={18} aria-hidden="true" />
           )}
         </motion.div>
       </AnimatePresence>

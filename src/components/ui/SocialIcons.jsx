@@ -26,7 +26,7 @@ export default function SocialIcons({ className = "", iconSize = 22 }) {
           href={social.href}
           aria-label={social.name}
           title={social.name}
-          className="p-3 rounded-full dark:bg-dark-card bg-light-card border dark:border-dark-border border-light-border dark:text-gray-400 text-gray-600 hover:text-white hover:bg-primary-orange dark:hover:bg-primary-orange hover:border-primary-orange transition-all transform hover:-translate-y-2 shadow-lg"
+          className="p-3 rounded-full dark:bg-dark-card bg-light-card border dark:border-dark-border border-light-border dark:text-gray-400 text-gray-600 hover:text-white hover:bg-primary-orange dark:hover:bg-sky-500 hover:border-primary-orange dark:hover:border-sky-500 transition-all transform hover:-translate-y-2 shadow-lg"
         >
           {social.icon}
         </a>

@@ -24,7 +24,10 @@
   }
 
   .text-gradient {
-    @apply bg-clip-text text-transparent bg-gradient-to-r from-[#F97316] to-[#F59E0B];
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-primary-orange to-primary-yellow;
+  }
+  .dark .text-gradient {
+    @apply from-sky-500 to-purple-500;
   }
 
   .animation-delay-2000 {

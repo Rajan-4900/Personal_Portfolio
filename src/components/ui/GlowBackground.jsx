@@ -33,12 +33,12 @@ export default function GlowBackground() {
       <motion.div
         animate={{ x: mousePosition.x * -2, y: mousePosition.y * -2 }}
         transition={{ type: "spring", stiffness: 50, damping: 20 }}
-        className="absolute top-1/4 left-1/4 w-96 h-96 bg-primary-orange/20 rounded-full mix-blend-screen filter blur-[100px] opacity-70 animate-blob"
+        className="absolute top-1/4 left-1/4 w-96 h-96 bg-primary-orange/20 dark:bg-sky-500/20 rounded-full mix-blend-screen filter blur-[100px] opacity-70 animate-blob"
       />
       <motion.div
         animate={{ x: mousePosition.x * 2, y: mousePosition.y * 2 }}
         transition={{ type: "spring", stiffness: 50, damping: 20 }}
-        className="absolute top-1/3 right-1/4 w-96 h-96 bg-primary-yellow/20 rounded-full mix-blend-screen filter blur-[100px] opacity-70 animate-blob animation-delay-2000"
+        className="absolute top-1/3 right-1/4 w-96 h-96 bg-primary-yellow/20 dark:bg-purple-500/20 rounded-full mix-blend-screen filter blur-[100px] opacity-70 animate-blob animation-delay-2000"
       />
     </div>
   );

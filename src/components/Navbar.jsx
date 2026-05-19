@@ -103,7 +103,7 @@ export default function Navbar() {
                       className={`relative text-sm font-medium transition-colors py-2 group ${
                         isActive 
                           ? "dark:text-white text-dark-bg" 
-                          : "dark:text-gray-400 text-gray-500 hover:text-primary-orange dark:hover:text-primary-orange"
+                          : "dark:text-gray-400 text-gray-500 hover:text-primary-orange dark:hover:text-sky-500"
                       }`}
                     >
                       {link.name}
@@ -116,7 +116,7 @@ export default function Navbar() {
                         />
                       )}
                       {/* Hover Underline Animation */}
-                      <span className={`absolute bottom-0 left-0 w-full h-0.5 bg-primary-orange transform origin-left scale-x-0 transition-transform duration-300 ${!isActive && 'group-hover:scale-x-100'}`}></span>
+                      <span className={`absolute bottom-0 left-0 w-full h-0.5 bg-primary-orange dark:bg-sky-500 transform origin-left scale-x-0 transition-transform duration-300 ${!isActive && 'group-hover:scale-x-100'}`}></span>
                     </a>
                   </li>
                 );
@@ -133,7 +133,7 @@ export default function Navbar() {
             <ThemeToggle />
             <button
               onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-              className="dark:text-gray-300 text-gray-600 hover:text-primary-orange focus:outline-none p-2"
+              className="dark:text-gray-300 text-gray-600 hover:text-primary-orange dark:hover:text-sky-500 focus:outline-none p-2"
               aria-expanded={isMobileMenuOpen}
               aria-label="Toggle navigation menu"
             >

@@ -31,8 +31,8 @@ export default function About() {
         >
           <div className="relative aspect-square max-w-md mx-auto">
             {/* Decorative background for the image */}
-            <div className="absolute inset-0 bg-gradient-to-tr from-primary-orange to-primary-yellow rounded-3xl transform rotate-6 opacity-50 blur-lg"></div>
-            <div className="absolute inset-0 bg-gradient-to-tr from-primary-orange to-primary-yellow rounded-3xl transform rotate-3 transition-transform hover:rotate-6 duration-300"></div>
+            <div className="absolute inset-0 bg-gradient-to-tr from-primary-orange to-primary-yellow dark:from-sky-500 dark:to-purple-500 rounded-3xl transform rotate-6 opacity-50 blur-lg"></div>
+            <div className="absolute inset-0 bg-gradient-to-tr from-primary-orange to-primary-yellow dark:from-sky-500 dark:to-purple-500 rounded-3xl transform rotate-3 transition-transform hover:rotate-6 duration-300"></div>
             <div className="absolute inset-0 dark:bg-dark-card bg-light-card rounded-3xl border border-white/10 overflow-hidden flex items-center justify-center shadow-2xl">
               <span className="text-4xl text-gray-500/50 font-bold px-8 text-center">
                 Your Professional Photo Here
@@ -68,7 +68,7 @@ export default function About() {
                   transition={{ duration: 0.3, delay: index * 0.05 }}
                   className="flex items-center gap-2 dark:text-gray-300 text-gray-600"
                 >
-                  <span className="text-primary-orange">▹</span>
+                  <span className="text-primary-orange dark:text-sky-500">▹</span>
                   {skill}
                 </motion.li>
               ))}

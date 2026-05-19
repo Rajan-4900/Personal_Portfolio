@@ -28,7 +28,7 @@ export default function MobileMenu({ isOpen, navLinks, activeSection, onLinkClic
                   onClick={(e) => onLinkClick(e, link.href)}
                   className={`block px-4 py-3 text-lg font-medium rounded-xl transition-all ${
                     isActive
-                      ? "dark:bg-white/10 bg-black/5 dark:text-white text-dark-bg border-l-4 border-primary-orange"
+                      ? "dark:bg-white/10 bg-black/5 dark:text-white text-dark-bg border-l-4 border-primary-orange dark:border-sky-500"
                       : "dark:text-gray-400 text-gray-600 hover:dark:bg-white/5 hover:bg-black/5"
                   }`}
                   aria-current={isActive ? "page" : undefined}

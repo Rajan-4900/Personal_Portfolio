@@ -26,7 +26,7 @@ export default function Contact() {
         >
           <a
             href="mailto:hello@example.com"
-            className="inline-block px-10 py-5 rounded-full bg-transparent border-2 border-primary-orange text-primary-orange font-medium text-lg hover:bg-primary-orange hover:text-white transition-all duration-300 transform hover:-translate-y-1"
+            className="inline-block px-10 py-5 rounded-full bg-transparent border-2 border-primary-orange dark:border-sky-500 text-primary-orange dark:text-sky-500 font-medium text-lg hover:bg-primary-orange dark:hover:bg-sky-500 hover:text-white dark:hover:text-white transition-all duration-300 transform hover:-translate-y-1"
           >
             Say Hello
           </a>

@@ -72,7 +72,7 @@ export default function Hero() {
             <h1 className="text-5xl md:text-7xl font-extrabold dark:text-white text-dark-bg tracking-tight leading-tight mb-6">
               <span className="text-gradient">John Doe</span>
             </h1>
-            <h2 className="text-2xl md:text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-primary-orange to-primary-yellow min-h-[48px]" aria-live="polite">
+            <h2 className="text-2xl md:text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-primary-orange to-primary-yellow dark:from-sky-500 dark:to-purple-500 min-h-[48px]" aria-live="polite">
               <Typewriter words={[
                 "Full Stack Developer",
                 "Frontend Developer",
@@ -94,14 +94,14 @@ export default function Hero() {
           >
             <a 
               href="#projects"
-              className="px-8 py-4 rounded-full bg-gradient-dark text-white font-bold text-lg hover:shadow-[0_0_30px_rgba(249,115,22,0.6)] transition-all transform hover:-translate-y-1 w-full sm:w-auto text-center relative overflow-hidden group"
+              className="px-8 py-4 rounded-full bg-gradient-dark dark:bg-gradient-to-r dark:from-sky-500 dark:to-purple-500 text-white font-bold text-lg hover:shadow-[0_0_30px_rgba(249,115,22,0.6)] dark:hover:shadow-glow-dark-primary transition-all transform hover:-translate-y-1 w-full sm:w-auto text-center relative overflow-hidden group"
             >
               <span className="relative z-10">View Projects</span>
               <div className="absolute inset-0 h-full w-full bg-white/20 transform scale-x-0 group-hover:scale-x-100 transition-transform origin-left rounded-full" aria-hidden="true"></div>
             </a>
             <a 
               href="#resume"
-              className="px-8 py-4 rounded-full dark:bg-dark-card bg-light-card border border-primary-orange/50 dark:text-white text-dark-bg font-bold text-lg hover:bg-primary-orange/10 transition-all w-full sm:w-auto text-center"
+              className="px-8 py-4 rounded-full dark:bg-dark-card bg-light-card border border-primary-orange/50 dark:border-sky-500/50 dark:text-white text-dark-bg font-bold text-lg hover:bg-primary-orange/10 dark:hover:bg-sky-500/10 transition-all w-full sm:w-auto text-center"
             >
               Download Resume
             </a>
@@ -120,12 +120,12 @@ export default function Hero() {
         >
           <div className="relative w-80 h-80 md:w-[450px] md:h-[450px] mx-auto">
             {/* Outer Rotating Glow */}
-            <div className="absolute inset-0 rounded-full bg-gradient-to-tr from-primary-orange via-transparent to-primary-yellow p-1 animate-spin-slow opacity-50 blur-md"></div>
+            <div className="absolute inset-0 rounded-full bg-gradient-to-tr from-primary-orange via-transparent to-primary-yellow dark:from-sky-500 dark:via-transparent dark:to-purple-500 p-1 animate-spin-slow opacity-50 blur-md"></div>
             
             {/* Main Visual Container */}
             <div className="absolute inset-4 rounded-full dark:bg-dark-card/80 bg-light-card/80 backdrop-blur-3xl border dark:border-white/10 border-black/5 overflow-hidden flex items-center justify-center shadow-2xl relative group">
-              <div className="absolute inset-0 bg-gradient-to-br from-primary-orange/10 to-primary-yellow/10 group-hover:scale-110 transition-transform duration-700"></div>
-              <span className="text-8xl text-transparent bg-clip-text bg-gradient-to-r from-primary-orange to-primary-yellow font-bold opacity-30 group-hover:opacity-100 transition-opacity duration-500">
+              <div className="absolute inset-0 bg-gradient-to-br from-primary-orange/10 to-primary-yellow/10 dark:from-sky-500/10 dark:to-purple-500/10 group-hover:scale-110 transition-transform duration-700"></div>
+              <span className="text-8xl text-transparent bg-clip-text bg-gradient-to-r from-primary-orange to-primary-yellow dark:from-sky-500 dark:to-purple-500 font-bold opacity-30 group-hover:opacity-100 transition-opacity duration-500">
                 DEV
               </span>
             </div>
@@ -134,7 +134,7 @@ export default function Hero() {
             <motion.div
               animate={{ y: [0, -15, 0], rotate: [0, 2, 0] }}
               transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
-              className="absolute top-10 -left-12 px-6 py-4 rounded-2xl dark:glass glass-light shadow-[0_0_30px_rgba(249,115,22,0.3)] border border-primary-orange/20 backdrop-blur-xl"
+              className="absolute top-10 -left-12 px-6 py-4 rounded-2xl dark:glass glass-light shadow-glow-orange-lg dark:shadow-glow-dark-primary border border-primary-orange/20 dark:border-sky-500/20 backdrop-blur-xl"
             >
               <div className="flex items-center gap-3">
                 <div className="w-3 h-3 rounded-full bg-green-400 animate-pulse"></div>
@@ -145,10 +145,10 @@ export default function Hero() {
             <motion.div
               animate={{ y: [0, 15, 0], rotate: [0, -2, 0] }}
               transition={{ duration: 5, repeat: Infinity, ease: "easeInOut", delay: 1 }}
-              className="absolute bottom-16 -right-8 px-6 py-4 rounded-2xl dark:glass glass-light shadow-[0_0_30px_rgba(245,158,11,0.3)] border border-primary-yellow/20 backdrop-blur-xl"
+              className="absolute bottom-16 -right-8 px-6 py-4 rounded-2xl dark:glass glass-light shadow-glow-yellow dark:shadow-glow-dark-secondary border border-primary-yellow/20 dark:border-purple-500/20 backdrop-blur-xl"
             >
               <div className="flex flex-col">
-                <span className="font-bold text-primary-yellow text-2xl">5+</span>
+                <span className="font-bold text-primary-yellow dark:text-purple-500 text-2xl">5+</span>
                 <span className="dark:text-gray-400 text-gray-500 text-xs font-medium uppercase tracking-wider">Years Experience</span>
               </div>
             </motion.div>
@@ -174,7 +174,7 @@ export default function Hero() {
           <motion.div 
             animate={{ y: [0, 15, 0], opacity: [1, 0, 1] }}
             transition={{ duration: 1.5, repeat: Infinity, ease: "easeInOut" }}
-            className="w-1.5 h-3 bg-primary-orange rounded-full"
+            className="w-1.5 h-3 bg-primary-orange dark:bg-sky-500 rounded-full"
           />
         </motion.div>
       </motion.div>
