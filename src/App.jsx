@@ -9,6 +9,7 @@ import Resume from "./components/Resume";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import { ThemeProvider } from "./context/ThemeContext";
+import FutureProjects from "./components/FutureProjects";
 
 function App() {
   const [currentPage, setCurrentPage] = useState("home");
@@ -43,7 +44,12 @@ function App() {
                 exit={{ opacity: 0, y: -15 }}
                 transition={{ duration: 0.3, ease: "easeInOut" }}
               >
-                {currentPage === "home" && <Hero />}
+                {currentPage === "home" && (
+                  <>
+                    <Hero />
+                    <FutureProjects />
+                  </>
+                )}
                 {currentPage === "about" && <About />}
                 {currentPage === "skills" && <Skills />}
                 {currentPage === "projects" && <Projects />}

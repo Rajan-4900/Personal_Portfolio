@@ -52,7 +52,7 @@ export default function Hero() {
   return (
     <section
       id="home"
-      className="relative min-h-screen flex items-center justify-center pt-20 overflow-hidden"
+      className="relative min-h-[calc(100vh-80px)] flex items-start lg:items-center justify-center pt-6 pb-16 lg:py-20 overflow-hidden"
       aria-label="Hero Section"
     >
       <GlowBackground />
