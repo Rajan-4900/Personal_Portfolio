@@ -19,7 +19,7 @@ export default function About() {
   return (
     <Section id="about" className="dark:bg-dark-bg/50 bg-light-bg/50 relative">
       <SectionTitle title="About Me" subtitle="Who I Am" />
-      
+
       <div className="flex flex-col lg:flex-row gap-16 items-center">
         {/* Image/Visual */}
         <motion.div
@@ -50,12 +50,15 @@ export default function About() {
           className="flex-1 space-y-6"
         >
           <p className="text-lg md:text-xl dark:text-gray-300 text-gray-600 leading-relaxed">
-            I am a passionate <span className="text-gradient font-semibold">Full Stack Developer</span> with a strong background in creating dynamic, user-centric web applications. I love turning complex problems into simple, beautiful, and intuitive designs.
+            I am a passionate <span className="text-gradient font-semibold">Full Stack Developer</span> and Computer Science Engineering student with a strong interest in modern web technologies, AI-powered applications, and creative UI/UX design. I enjoy building responsive, user-friendly, and interactive web applications that solve real-world problems and improve user experience.
           </p>
           <p className="text-lg dark:text-gray-400 text-gray-500 leading-relaxed">
-            My journey in web development started with a curiosity to understand how things work on the internet. Fast forward to today, I have had the privilege of building software for startups, large corporations, and everything in between.
+            I have completed internships in Web Development and Full Stack Development, where I worked on real-world projects such as portfolio websites, weather applications, responsive landing pages, and interactive web apps. I have also successfully developed and deployed 2 full stack websites, which helped me gain practical experience in frontend development, backend integration, database management, and deployment workflows.
           </p>
-          
+          <p className="text-lg dark:text-gray-400 text-gray-500 leading-relaxed">
+            I continuously explore new technologies and AI tools to improve productivity, creativity, and development efficiency. My goal is to become a skilled software developer who creates innovative and impactful digital solutions.
+          </p>
+
           <div className="pt-6">
             <h4 className="text-lg font-semibold dark:text-white text-dark-bg mb-4">Here are a few technologies I've been working with recently:</h4>
             <ul className="grid grid-cols-2 gap-3">

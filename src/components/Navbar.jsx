@@ -33,23 +33,22 @@ export default function Navbar({ activeSection }) {
       initial={{ y: -100, opacity: 0 }}
       animate={{ y: 0, opacity: 1 }}
       transition={{ duration: 0.6, ease: "easeOut" }}
-      className={`fixed top-0 w-full z-50 transition-all duration-300 ${
-        isScrolled
-          ? "py-3 dark:glass glass-light shadow-[0_4px_30px_rgba(0,0,0,0.1)]"
-          : "py-6 bg-transparent"
-      }`}
+      className={`fixed top-0 w-full z-50 transition-all duration-300 ${isScrolled
+        ? "py-3 dark:glass glass-light shadow-[0_4px_30px_rgba(0,0,0,0.1)]"
+        : "py-6 bg-transparent"
+        }`}
     >
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between">
-          
+
           {/* Logo */}
-          <a 
+          <a
             href="#home"
             className="flex-shrink-0 cursor-pointer"
             onClick={handleNavClick}
           >
             <span className="text-2xl font-bold dark:text-white text-dark-bg tracking-tighter hover:opacity-80 transition-opacity">
-              Dev<span className="text-gradient">Portfolio</span>
+              Rajan<span className="text-gradient"> L</span>
             </span>
           </a>
 
@@ -64,11 +63,10 @@ export default function Navbar({ activeSection }) {
                       href={link.href}
                       onClick={handleNavClick}
                       aria-current={isActive ? "page" : undefined}
-                      className={`relative text-sm font-medium transition-colors py-2 group ${
-                        isActive 
-                          ? "dark:text-white text-dark-bg" 
-                          : "dark:text-gray-400 text-gray-500 hover:text-primary-orange dark:hover:text-sky-500"
-                      }`}
+                      className={`relative text-sm font-medium transition-colors py-2 group ${isActive
+                        ? "dark:text-white text-dark-bg"
+                        : "dark:text-gray-400 text-gray-500 hover:text-primary-orange dark:hover:text-sky-500"
+                        }`}
                     >
                       {link.name}
                       {isActive && (
