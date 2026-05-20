@@ -5,15 +5,17 @@ export default function SectionTitle({ title, subtitle, alignment = "center" }) 
   
   return (
     <div className={`mb-16 ${isCenter ? "text-center" : "text-left"}`}>
-      <motion.h3
-        initial={{ opacity: 0, y: 20 }}
-        whileInView={{ opacity: 1, y: 0 }}
-        viewport={{ once: true }}
-        transition={{ duration: 0.5 }}
-        className="text-lg md:text-xl font-medium text-primary-orange dark:text-sky-500 mb-3 tracking-wider uppercase"
-      >
-        {subtitle}
-      </motion.h3>
+      {subtitle && (
+        <motion.h3
+          initial={{ opacity: 0, y: 20 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.5 }}
+          className="text-lg md:text-xl font-medium text-primary-orange dark:text-sky-500 mb-3 tracking-wider uppercase"
+        >
+          {subtitle}
+        </motion.h3>
+      )}
       <motion.h2
         initial={{ opacity: 0, y: 20 }}
         whileInView={{ opacity: 1, y: 0 }}
