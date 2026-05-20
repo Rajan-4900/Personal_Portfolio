@@ -149,8 +149,8 @@ export default function Hero() {
               className="absolute bottom-16 -right-8 px-6 py-4 rounded-2xl dark:glass glass-light shadow-glow-yellow dark:shadow-glow-dark-secondary border border-primary-yellow/20 dark:border-purple-500/20 backdrop-blur-xl"
             >
               <div className="flex flex-col">
-                <span className="font-bold text-primary-yellow dark:text-purple-500 text-2xl">5+</span>
-                <span className="dark:text-gray-400 text-gray-500 text-xs font-medium uppercase tracking-wider">Years Experience</span>
+                <span className="font-bold text-primary-yellow dark:text-purple-500 text-2xl">Fresher</span>
+                <span className="dark:text-gray-400 text-gray-500 text-xs font-medium uppercase tracking-wider">Open To Work</span>
               </div>
             </motion.div>
           </div>

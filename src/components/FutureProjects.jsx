@@ -6,27 +6,27 @@ import { FiCpu, FiCompass, FiCode, FiLayers } from "react-icons/fi";
 const initialFutureProjects = [
   {
     id: 1,
-    title: "AI Portfolio Analyzer",
-    description: "An intelligent analyzer tool that provides structure, typography, and SEO feedback for developer portfolios using AI models.",
-    category: "AI / SaaS",
+    title: "E-Commerce Website",
+    description: "A high-performance modern e-commerce web application with seamless checkout, real-time inventory management, and a beautiful user interface.",
+    category: "Web3",
     status: "In Progress",
     statusEmoji: "🛠️",
     source: "Planned"
   },
   {
     id: 2,
-    title: "Decentralized Blogging Hub",
-    description: "A censorship-resistant blogging space utilising decentralized storage (IPFS) and smart contract access control.",
-    category: "Web3",
+    title: "Tour and Travel Website",
+    description: "A complete Tour and Travel website/Web Application for travel lovers with booking, payment, and management features.",
+    category: "Web App",
     status: "Planned",
     statusEmoji: "📋",
     source: "Planned"
   },
   {
     id: 3,
-    title: "Real-time Collaboration Workspace",
-    description: "A canvas-based collaborative tool enabling developers to design system architectures together with live cursors.",
-    category: "Web App",
+    title: "AI Portfolio Analyzer",
+    description: "An intelligent analyzer tool that provides structure, typography, and SEO feedback for developer portfolios using AI models.",
+    category: "AI / SaaS",
     status: "Planned",
     statusEmoji: "📋",
     source: "Planned"
@@ -45,9 +45,9 @@ export default function FutureProjects() {
 
   return (
     <Section id="future-projects" className="border-t dark:border-dark-border border-light-border bg-gradient-to-b dark:from-dark-bg/20 dark:to-dark-bg/60 from-light-bg/20 to-light-bg/60">
-      <SectionTitle 
-        title="Future Projects" 
-        alignment="center" 
+      <SectionTitle
+        title="Future Projects"
+        alignment="center"
       />
 
       <div className="max-w-6xl mx-auto px-4">
@@ -65,7 +65,7 @@ export default function FutureProjects() {
             >
               {/* Visual Accent Glow Top */}
               <div className="absolute top-0 left-0 w-full h-1 bg-gradient-to-r from-primary-orange to-primary-yellow dark:from-sky-500 dark:to-purple-500" />
-              
+
               <div>
                 <div className="flex justify-between items-start mb-4">
                   <div className="p-3 rounded-2xl dark:bg-white/5 bg-black/5 dark:text-sky-400 text-primary-orange">
