@@ -5,37 +5,49 @@ import { FiDownload, FiBriefcase, FiBookOpen } from "react-icons/fi";
 
 const experiences = [
   {
-    role: "Senior Full Stack Developer",
-    company: "Tech Innovation Labs",
-    period: "2023 - Present",
-    description: "Led development of scalable web applications using React, Node.js, and Cloud Infrastructure. Mentored junior engineers and improved build system performance by 40%.",
+    role: "Full Stack Web Development",
+    company: "Future Interns - Intern",
+    period: "1 Month Internship 2026",
+    description: "Completed a 1-month Full Stack Web Development internship at Future Interns by developing real-world projects and improving frontend and backend development skills.",
   },
   {
-    role: "Frontend Engineer",
-    company: "Creative Web Agency",
-    period: "2021 - 2023",
-    description: "Built beautiful, interactive landing pages and responsive dashboards. Collaborated with UI/UX designers to implement design systems using Tailwind CSS.",
+    role: "Web Development Intern",
+    company: "Prodigy InfoTech ",
+    period: "1 Month Internship 2026",
+    description: "Completed a 1-month web development internship at Prodigy InfoTech by successfully building 5 responsive and interactive frontend projects using HTML, CSS, and JavaScript.",
   },
-  {
-    role: "Junior Web Developer",
-    company: "StartUp Hub",
-    period: "2020 - 2021",
-    description: "Developed and maintained e-commerce websites and client portals. Integrated payment processors and built secure REST APIs.",
-  },
+  // {
+  //   role: "Frontend Engineer",
+  //   company: "Creative Web Agency",
+  //   period: "2021 - 2023",
+  //   description: "Built beautiful, interactive landing pages and responsive dashboards. Collaborated with UI/UX designers to implement design systems using Tailwind CSS.",
+  // },
+  // {
+  //   role: "Junior Web Developer",
+  //   company: "StartUp Hub",
+  //   period: "2020 - 2021",
+  //   description: "Developed and maintained e-commerce websites and client portals. Integrated payment processors and built secure REST APIs.",
+  // },
 ];
 
 const education = [
   {
-    degree: "Master of Science in Computer Science",
-    institution: "Tech State University",
-    period: "2018 - 2020",
-    description: "Specialized in Software Engineering and Distributed Systems. Graduated with honors.",
+    degree: "Bachelor of Engineering",
+    institution: "City Engineering College, Bangalore",
+    period: "2024 - 2027",
+    description: "Major in Computer Science. Built strong foundation in data structures, algorithms, and software engineering.",
   },
   {
-    degree: "Bachelor of Science in Information Technology",
-    institution: "National Institute of Tech",
-    period: "2014 - 2018",
-    description: "Acquired solid foundation in Algorithms, OOP, Database Management, and Web Technologies.",
+    degree: "Diploma",
+    institution: "The Oxford Polytechnic, Bangalore",
+    period: "2021 - 2024",
+    description: "Completed a diploma in Computer Science, gaining foundational knowledge in programming, web development, and software concepts",
+  },
+  {
+    degree: "10th",
+    institution: "Karnataka Public School, Bangalore",
+    period: "2020",
+    description: "Successfully completed secondary education, and developed interest in Robotics and programming.",
   },
 ];
 
@@ -47,7 +59,8 @@ export default function Resume() {
       {/* Download Button */}
       <div className="flex justify-center mb-16">
         <motion.a
-          href="#"
+          href="/resume.pdf"
+          download="Resume.pdf"
           whileHover={{ scale: 1.05 }}
           whileTap={{ scale: 0.95 }}
           className="flex items-center gap-3 px-8 py-4 rounded-full bg-gradient-dark dark:bg-gradient-to-r dark:from-sky-500 dark:to-purple-500 text-white font-bold text-lg hover:shadow-[0_0_30px_rgba(249,115,22,0.6)] dark:hover:shadow-glow-sky transition-all transform hover:-translate-y-1"

@@ -58,7 +58,7 @@ export default function Hero() {
       <GlowBackground />
 
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full flex flex-col lg:flex-row items-center justify-between gap-16 lg:gap-8">
-        
+
         {/* Left Side: Text Content */}
         <div className="flex-1 text-center lg:text-left space-y-8 mt-10 lg:mt-0">
           <motion.div
@@ -70,7 +70,7 @@ export default function Hero() {
               Hello, world! I am
             </p>
             <h1 className="text-5xl md:text-7xl font-extrabold dark:text-white text-dark-bg tracking-tight leading-tight mb-6">
-              <span className="text-gradient">John Doe</span>
+              <span className="text-gradient">Rajan L</span>
             </h1>
             <h2 className="text-2xl md:text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-primary-orange to-primary-yellow dark:from-sky-500 dark:to-purple-500 min-h-[48px]" aria-live="polite">
               <Typewriter words={[
@@ -82,7 +82,7 @@ export default function Hero() {
               <span className="sr-only">Full Stack Developer</span>
             </h2>
             <p className="mt-6 text-lg md:text-xl dark:text-gray-400 text-gray-600 max-w-2xl mx-auto lg:mx-0 leading-relaxed">
-              I specialize in building exceptional digital experiences. Currently, I'm focused on building accessible, human-centered products and seamless web applications.
+              Passionate Full Stack Web Developer focused on building modern web applications, creative UI/UX designs, and AI-powered digital experiences with real-world project expertise.
             </p>
           </motion.div>
 
@@ -92,15 +92,16 @@ export default function Hero() {
             transition={{ duration: 0.8, delay: 0.2, ease: "easeOut" }}
             className="flex flex-col sm:flex-row items-center justify-center lg:justify-start gap-4 pt-4"
           >
-            <a 
+            <a
               href="#projects"
               className="px-8 py-4 rounded-full bg-gradient-dark dark:bg-gradient-to-r dark:from-sky-500 dark:to-purple-500 text-white font-bold text-lg hover:shadow-[0_0_30px_rgba(249,115,22,0.6)] dark:hover:shadow-glow-dark-primary transition-all transform hover:-translate-y-1 w-full sm:w-auto text-center relative overflow-hidden group"
             >
               <span className="relative z-10">View Projects</span>
               <div className="absolute inset-0 h-full w-full bg-white/20 transform scale-x-0 group-hover:scale-x-100 transition-transform origin-left rounded-full" aria-hidden="true"></div>
             </a>
-            <a 
-              href="#resume"
+            <a
+              href="/resume.pdf"
+              download="Resume.pdf"
               className="px-8 py-4 rounded-full dark:bg-dark-card bg-light-card border border-primary-orange/50 dark:border-sky-500/50 dark:text-white text-dark-bg font-bold text-lg hover:bg-primary-orange/10 dark:hover:bg-sky-500/10 transition-all w-full sm:w-auto text-center"
             >
               Download Resume
@@ -121,7 +122,7 @@ export default function Hero() {
           <div className="relative w-80 h-80 md:w-[450px] md:h-[450px] mx-auto">
             {/* Outer Rotating Glow */}
             <div className="absolute inset-0 rounded-full bg-gradient-to-tr from-primary-orange via-transparent to-primary-yellow dark:from-sky-500 dark:via-transparent dark:to-purple-500 p-1 animate-spin-slow opacity-50 blur-md"></div>
-            
+
             {/* Main Visual Container */}
             <div className="absolute inset-4 rounded-full dark:bg-dark-card/80 bg-light-card/80 backdrop-blur-3xl border dark:border-white/10 border-black/5 overflow-hidden flex items-center justify-center shadow-2xl relative group">
               <div className="absolute inset-0 bg-gradient-to-br from-primary-orange/10 to-primary-yellow/10 dark:from-sky-500/10 dark:to-purple-500/10 group-hover:scale-110 transition-transform duration-700"></div>
@@ -158,7 +159,7 @@ export default function Hero() {
       </div>
 
       {/* Animated Scroll Indicator */}
-      <motion.div 
+      <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ delay: 1.5, duration: 1 }}
@@ -171,7 +172,7 @@ export default function Hero() {
           transition={{ duration: 1.5, repeat: Infinity, ease: "easeInOut" }}
           className="w-8 h-12 rounded-full border-2 dark:border-gray-500 border-gray-400 flex items-start justify-center p-2"
         >
-          <motion.div 
+          <motion.div
             animate={{ y: [0, 15, 0], opacity: [1, 0, 1] }}
             transition={{ duration: 1.5, repeat: Infinity, ease: "easeInOut" }}
             className="w-1.5 h-3 bg-primary-orange dark:bg-sky-500 rounded-full"
