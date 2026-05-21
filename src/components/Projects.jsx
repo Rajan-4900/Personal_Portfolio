@@ -29,7 +29,7 @@ const projects = [
     title: "My Portfolio",
     description: "A modern, responsive, and interactive portfolio website built with React, Tailwind CSS, and Framer Motion to showcase my projects and skills.",
     tech: ["React", "Tailwind CSS", "JavaScript"],
-    github: "https://github.com/Rajan-4900/FUTURE_FS_01.git",
+    github: "https://github.com/Rajan-4900/Personal_Portfolio.git",
     external: "#",
     featured: false,
     category: "frontend",
