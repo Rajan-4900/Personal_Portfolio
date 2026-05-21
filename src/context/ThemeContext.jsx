@@ -9,11 +9,9 @@ export const ThemeProvider = ({ children }) => {
       if (savedTheme) {
         return savedTheme;
       }
-      return window.matchMedia("(prefers-color-scheme: dark)").matches
-        ? "dark"
-        : "light";
+      return "light";
     }
-    return "dark"; // Default to dark theme for that premium feel
+    return "light";
   });
 
   useEffect(() => {

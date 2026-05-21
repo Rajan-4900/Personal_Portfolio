@@ -48,11 +48,16 @@ const Typewriter = ({ words }) => {
   );
 };
 
+const scrollToNextSection = (e) => {
+  e.preventDefault();
+  document.getElementById("future-projects")?.scrollIntoView({ behavior: "smooth" });
+};
+
 export default function Hero() {
   return (
     <section
       id="home"
-      className="relative min-h-[calc(100vh-80px)] flex items-start lg:items-center justify-center pt-6 pb-16 lg:py-20 overflow-hidden"
+      className="relative min-h-[calc(100vh-80px)] flex items-start lg:items-center justify-center pt-6 pb-8 md:pb-20 lg:py-20 overflow-hidden"
       aria-label="Hero Section"
     >
       <GlowBackground />
@@ -110,6 +115,32 @@ export default function Hero() {
           </motion.div>
 
           <SocialIcons className="pt-8 justify-center lg:justify-start" />
+
+          {/* Scroll indicator — in-flow on mobile, fixed to hero bottom on md+ */}
+          <motion.button
+            type="button"
+            onClick={scrollToNextSection}
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ delay: 1.5, duration: 1 }}
+            className="flex md:hidden flex-col items-center gap-1.5 mt-10 mx-auto cursor-pointer"
+            aria-label="Scroll to next section"
+          >
+            <span className="text-[10px] sm:text-xs uppercase tracking-widest dark:text-gray-500 text-gray-400 font-medium">
+              Scroll Down
+            </span>
+            <motion.div
+              animate={{ y: [0, 8, 0] }}
+              transition={{ duration: 1.5, repeat: Infinity, ease: "easeInOut" }}
+              className="w-6 h-9 rounded-full border-2 dark:border-gray-500 border-gray-400 flex items-start justify-center p-1.5"
+            >
+              <motion.div
+                animate={{ y: [0, 10, 0], opacity: [1, 0, 1] }}
+                transition={{ duration: 1.5, repeat: Infinity, ease: "easeInOut" }}
+                className="w-1 h-2.5 bg-primary-orange dark:bg-sky-500 rounded-full"
+              />
+            </motion.div>
+          </motion.button>
         </div>
 
         {/* Right Side: Animated Design / Illustration */}
@@ -159,15 +190,19 @@ export default function Hero() {
 
       </div>
 
-      {/* Animated Scroll Indicator */}
-      <motion.div
+      {/* Animated Scroll Indicator — desktop / tablet */}
+      <motion.button
+        type="button"
+        onClick={scrollToNextSection}
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ delay: 1.5, duration: 1 }}
-        className="absolute bottom-8 left-1/2 transform -translate-x-1/2 flex flex-col items-center gap-2"
-        aria-hidden="true"
+        className="hidden md:flex absolute bottom-6 lg:bottom-8 left-1/2 -translate-x-1/2 flex-col items-center gap-2 z-10 cursor-pointer hover:opacity-80 transition-opacity"
+        aria-label="Scroll to next section"
       >
-        <span className="text-xs uppercase tracking-widest dark:text-gray-500 text-gray-400 font-medium">Scroll Down</span>
+        <span className="text-xs uppercase tracking-widest dark:text-gray-500 text-gray-400 font-medium">
+          Scroll Down
+        </span>
         <motion.div
           animate={{ y: [0, 10, 0] }}
           transition={{ duration: 1.5, repeat: Infinity, ease: "easeInOut" }}
@@ -179,7 +214,7 @@ export default function Hero() {
             className="w-1.5 h-3 bg-primary-orange dark:bg-sky-500 rounded-full"
           />
         </motion.div>
-      </motion.div>
+      </motion.button>
     </section>
   );
 }
