@@ -1,239 +1,493 @@
-# FUTURE_FS_01
+<div align="center">
 
+# 🚀 FUTURE_FS_01
 
-[![Vite](https://img.shields.io/badge/Vite-Next-blue.svg)](https://vitejs.dev/)
-[![React](https://img.shields.io/badge/React-18.2.0-blue.svg)](https://reactjs.org/)
-[![Tailwind](https://img.shields.io/badge/Tailwind-CSS-green.svg)](https://tailwindcss.com/)
-[![License](https://img.shields.io/badge/License-MIT-brightgreen.svg)](LICENSE)
-[![Build Status](https://img.shields.io/badge/build-passing-brightgreen.svg)](#)
-[![Deploy](https://img.shields.io/badge/deploy-ready-blue.svg)](#)
+### ✨ Modern Developer Portfolio — Fast, Animated & Production-Ready
 
-🌌 Iconic, modern, and fast — FUTURE_FS_01
+[![Vite](https://img.shields.io/badge/Vite-8.0-646CFF?style=for-the-badge&logo=vite&logoColor=white)](https://vitejs.dev/)
+[![React](https://img.shields.io/badge/React-19.2-61DAFB?style=for-the-badge&logo=react&logoColor=black)](https://react.dev/)
+[![Tailwind CSS](https://img.shields.io/badge/Tailwind-3.4-38B2AC?style=for-the-badge&logo=tailwind-css&logoColor=white)](https://tailwindcss.com/)
+[![Framer Motion](https://img.shields.io/badge/Framer_Motion-12-0055FF?style=for-the-badge&logo=framer&logoColor=white)](https://www.framer.com/motion/)
+[![License](https://img.shields.io/badge/License-MIT-green?style=for-the-badge)](LICENSE)
 
-This repository contains FUTURE_FS_01, a responsive, accessible portfolio / landing site starter built with Vite, React, and Tailwind CSS. It's designed to be minimal yet production-ready with a clear component structure, theme context, and opinionated UI utilities. Use it as a foundation for personal portfolios, project showcases, and small marketing sites.
+**🌌 Iconic, modern, and fast — a single-page portfolio built for developers who want polish without complexity.**
 
-Quick visual icons and badges
+[📖 Documentation](#-table-of-contents) · [⚡ Quick Start](#-quick-start) · [🧩 Components](#-components-reference) · [🎨 Theming](#-styling--theming) · [🚢 Deployment](#-deployment)
 
-- 🚀: Ready for deployment / production
-- ⚡: Fast dev experience (Vite + HMR)
-- 🎨: Tailwind-powered styling
-- 🔒: MIT Licensed
-- 🛠️: Developer tools & scripts
-- ♿: Accessibility-minded components
+</div>
 
-You can copy these emoji icons into section headers or component READMEs to make documentation more visual and professional.
+---
 
-Table of Contents
-- Project Overview
-- Features
-- Tech Stack
-- Quick Start
-- Development Workflow
-- Project Structure
-- Components Reference
-- Styling & Theming
-- Deployment
-- Contribution
-- Troubleshooting
-- License & Attribution
+## 📋 Table of Contents
 
-## Project Overview
+- [📌 Project Overview](#-project-overview)
+- [✨ Features](#-features)
+- [🛠️ Tech Stack](#️-tech-stack)
+- [⚡ Quick Start](#-quick-start)
+- [📜 Available Scripts](#-available-scripts)
+- [📁 Project Structure](#-project-structure)
+- [🧭 Routing & Navigation](#-routing--navigation)
+- [🧩 Components Reference](#-components-reference)
+- [🎨 Styling & Theming](#-styling--theming)
+- [🔧 Configuration](#-configuration)
+- [✏️ Customization Guide](#️-customization-guide)
+- [🚢 Deployment](#-deployment)
+- [♿ Accessibility](#-accessibility)
+- [🤝 Contributing](#-contributing)
+- [🐛 Troubleshooting](#-troubleshooting)
+- [❓ FAQ](#-faq)
+- [📄 License & Credits](#-license--credits)
 
-FUTURE_FS_01 is a modern front-end scaffold that prioritizes performance, accessibility, and developer experience. The project demonstrates common patterns for component-driven UIs, light/dark theming, and static asset handling. It comes pre-wired with:
+---
 
-- Vite for fast bundling and HMR
-- React functional components with hooks
-- Tailwind CSS for utility-first styling
-- Minimal ESLint/formatting configuration (project-specific)
+## 📌 Project Overview
 
-This README documents how to run, build, and extend the project, and explains the intent and responsibilities of the core parts of the codebase.
+**FUTURE_FS_01** is a responsive, accessible **developer portfolio** and landing site built with **Vite**, **React 19**, **Tailwind CSS**, and **Framer Motion**. It uses **hash-based routing** (`#home`, `#about`, etc.) so you get multi-page feel without a router dependency — ideal for static hosting on GitHub Pages, Netlify, or Vercel.
 
-## Features
+| | |
+|---|---|
+| 🎯 **Purpose** | Showcase skills, projects, resume, and contact in one polished site |
+| ⚡ **Performance** | Vite bundling, code-split-friendly structure, minimal dependencies |
+| 🎭 **UX** | Page transitions, typewriter hero, glass navbar, light/dark theme |
+| 📱 **Responsive** | Mobile-first layout with collapsible navigation |
+| 🔌 **Extensible** | Clear component boundaries and reusable UI primitives |
 
-- Fast dev server with HMR
-- Responsive, mobile-first layout and components
-- Theme toggle (light/dark) with persistent setting
-- Accessible navigation and keyboard-friendly UI
-- Ready-to-customize sections: Hero, About, Projects, Resume, Skills, Contact
+---
 
-## Tech Stack
+## ✨ Features
 
-- Runtime: React 18
-- Bundler: Vite
-- Styling: Tailwind CSS + PostCSS
-- Linting / formatting: ESLint + Prettier (project-configurable)
-- Optional: Vite plugins for React or SWC (see `vite.config.js`)
+### 🖥️ Core Experience
 
-## Quick Start
+- **🏠 Hash-based SPA navigation** — Switch sections via `#home`, `#about`, `#skills`, `#projects`, `#resume`, `#contact` without full page reloads
+- **🎬 Framer Motion animations** — Smooth enter/exit transitions when changing sections
+- **⌨️ Typewriter hero** — Animated rotating job titles on the home page
+- **🌓 Light / Dark theme** — Toggle with persistence in `localStorage` and system-preference fallback
+- **📲 Responsive navbar** — Glass effect on scroll, desktop links, mobile drawer menu
 
-Prerequisites: Node.js 16+ and npm or yarn.
+### 📄 Content Sections
 
-Install dependencies:
+| Section | Icon | Description |
+|---------|------|-------------|
+| **Hero** | 🦸 | Introduction, CTAs, social links, animated background |
+| **Future Projects** | 🔮 | Roadmap / planned work with status badges |
+| **About** | 👤 | Personal story and background |
+| **Skills** | 🧠 | Categorized skills with tech icons (React Icons) |
+| **Projects** | 💼 | Featured + filterable project grid with GitHub / live links |
+| **Resume** | 📄 | Resume download or view section |
+| **Contact** | ✉️ | Contact form and details |
+| **Footer** | 🔗 | Copyright, quick links, social icons |
+
+### 🎨 Design System
+
+- **🎨 Custom Tailwind palette** — Orange/yellow gradients (light), sky/purple accents (dark)
+- **✨ Glass morphism utilities** — `.glass` and `.glass-light` for navbar and cards
+- **💫 Glow shadows & blob animations** — Premium visual depth
+- **🔤 Outfit font** — Clean, modern typography via Google Fonts
+
+---
+
+## 🛠️ Tech Stack
+
+| Category | Technology | Version |
+|----------|------------|---------|
+| ⚛️ **UI Library** | [React](https://react.dev/) | `^19.2.6` |
+| 📦 **Bundler** | [Vite](https://vitejs.dev/) | `^8.0.12` |
+| 🎨 **Styling** | [Tailwind CSS](https://tailwindcss.com/) | `^3.4.19` |
+| 🎬 **Animation** | [Framer Motion](https://www.framer.com/motion/) | `^12.38.0` |
+| 🎯 **Icons** | [React Icons](https://react-icons.github.io/react-icons/) | `^5.6.0` |
+| 🧹 **Linting** | [ESLint](https://eslint.org/) + React Hooks / Refresh plugins | `^10.3.0` |
+| 🔧 **CSS Processing** | PostCSS + Autoprefixer | — |
+
+---
+
+## ⚡ Quick Start
+
+### 📋 Prerequisites
+
+| Requirement | Minimum |
+|-------------|---------|
+| 🟢 **Node.js** | `18.x` or higher recommended (`16+` supported) |
+| 📦 **Package manager** | `npm`, `yarn`, or `pnpm` |
+
+### 📥 Installation
 
 ```bash
+# 1️⃣ Clone the repository
+git clone https://github.com/Rajan-4900/FUTURE_FS_01.git
+cd FUTURE_FS_01
+
+# 2️⃣ Install dependencies
 npm install
-# or
-yarn install
 ```
 
-Run development server:
+### 🏃 Development
 
 ```bash
 npm run dev
-# or
-yarn dev
 ```
 
-Open http://localhost:5173 in your browser (Vite will show the exact URL).
+Open the URL shown in the terminal (typically **http://localhost:5173**).
 
-Build for production:
+### 🏗️ Production Build
 
 ```bash
+# Build optimized static assets → dist/
 npm run build
-```
 
-Preview the production build locally:
-
-```bash
+# Preview production build locally
 npm run preview
 ```
 
-Utility scripts available (from `package.json`):
+### 🔍 Lint
 
-- `dev` — Run Vite dev server
-- `build` — Produce production build in `dist/`
-- `preview` — Serve the production build locally for preview
-- `lint` — Run linters (if configured)
+```bash
+npm run lint
+```
 
-## Development Workflow & Recommendations
+---
 
-- Create feature branches for new work: `git checkout -b feat/your-feature`
-- Keep components small and focused — prefer composition over large monolith components
-- Add CSS utilities in Tailwind rather than writing long custom CSS files where possible
-- Reuse `ui/Section` and `ui/SectionTitle` for consistent layout and spacing
+## 📜 Available Scripts
 
-## Project Structure
+| Script | Command | Description |
+|--------|---------|-------------|
+| 🟢 `dev` | `npm run dev` | Start Vite dev server with HMR |
+| 📦 `build` | `npm run build` | Output production bundle to `dist/` |
+| 👁️ `preview` | `npm run preview` | Serve `dist/` locally for testing |
+| 🧹 `lint` | `npm run lint` | Run ESLint across the project |
 
-Top-level layout:
+---
 
-- `index.html` — Vite entry HTML
-- `src/main.jsx` — App bootstrap
-- `src/App.jsx` — Root component and route mounting
-- `src/components/` — Page sections and UI components
-- `src/components/ui/` — Reusable UI primitives (Section, ThemeToggle, SocialIcons, etc.)
-- `src/context/ThemeContext.jsx` — Theme provider + hook used across the app
+## 📁 Project Structure
 
-Example structure (key files):
+```
+FUTURE_FS_01/
+├── 📄 index.html              # Vite HTML entry + meta tags
+├── 📄 vite.config.js          # Vite + React plugin config
+├── 📄 tailwind.config.js      # Theme tokens, colors, animations
+├── 📄 postcss.config.js       # Tailwind + Autoprefixer
+├── 📄 eslint.config.js        # Flat ESLint config
+├── 📂 public/                 # Static assets (favicon, etc.)
+│   └── icons.svg
+└── 📂 src/
+    ├── 📄 main.jsx            # React root mount
+    ├── 📄 App.jsx             # Layout, hash routing, page switching
+    ├── 📄 index.css           # Tailwind directives + global utilities
+    ├── 📄 App.css             # App-level styles (if any)
+    ├── 📂 assets/             # Project screenshots & images
+    ├── 📂 context/
+    │   └── ThemeContext.jsx   # Theme provider + useTheme hook
+    └── 📂 components/
+        ├── Hero.jsx           # Landing hero + typewriter
+        ├── Navbar.jsx         # Top navigation
+        ├── About.jsx          # About section
+        ├── Skills.jsx         # Skills grid with categories
+        ├── Projects.jsx       # Project cards + filters
+        ├── FutureProjects.jsx # Planned projects roadmap
+        ├── Resume.jsx         # Resume section
+        ├── Contact.jsx        # Contact section
+        ├── Footer.jsx         # Site footer
+        └── 📂 ui/
+            ├── Section.jsx         # Consistent section wrapper
+            ├── SectionTitle.jsx    # Section headings
+            ├── ThemeToggle.jsx     # Light/dark switch
+            ├── MobileMenu.jsx      # Mobile nav drawer
+            ├── SocialIcons.jsx     # Social link buttons
+            └── GlowBackground.jsx  # Animated hero background
+```
 
-- `src/components/Hero.jsx` — Top-of-page hero with CTA
-- `src/components/Navbar.jsx` — Responsive navbar with mobile menu
-- `src/components/Projects.jsx` — Projects grid and project cards
-- `src/components/Resume.jsx` — Resume section (download / view)
-- `src/components/Contact.jsx` — Contact form / details
+---
 
-## Components Reference
+## 🧭 Routing & Navigation
 
-The components are organized to be easy to locate and extend. Short descriptions:
+This app does **not** use React Router. Navigation is handled with **URL hashes**:
 
-- `Hero.jsx` — Visual introduction; contains background, title, short summary, CTAs
-- `Navbar.jsx` — Logo, nav links, theme toggle; collapsible menu handled in `ui/MobileMenu.jsx`
-- `Projects.jsx` — Maps project data to cards; extend `assets/` for screenshots or links
-- `Skills.jsx` — Visual list or grid of skills with optional proficiency indicators
-- `Footer.jsx` — Copyright, social links, quick nav
+```
+#home      → Hero + Future Projects
+#about     → About section
+#skills    → Skills section
+#projects  → Projects section
+#resume    → Resume section
+#contact   → Contact section
+```
 
-For adding a new section:
+**How it works:**
 
-1. Create `src/components/YourSection.jsx` using existing Section wrapper
-2. Add a link to `Navbar.jsx` and include it in `App.jsx` ordering
-3. Style using Tailwind classes and `ui/SectionTitle` for consistency
+1. `Navbar` links use `href="#section"` (e.g. `#projects`).
+2. `App.jsx` listens for `hashchange` and updates `currentPage` state.
+3. `AnimatePresence` + `motion.div` animate between sections.
+4. On route change, the window scrolls to the top.
 
-## Styling & Theming
+To add a new page:
 
-Tailwind is configured in `tailwind.config.js`. The app uses a `ThemeContext` to toggle light/dark modes and persist the user's choice (localStorage). The small `ui/ThemeToggle.jsx` component encapsulates the toggle UI and reads/writes the context.
+1. Create `src/components/YourSection.jsx`.
+2. Add `{ name: "Your Page", href: "#yourpage" }` to `navLinks` in `Navbar.jsx`.
+3. Render it in `App.jsx` when `currentPage === "yourpage"`.
 
-Keep design tokens minimal — prefer Tailwind tokens in `tailwind.config.js` for colors and breakpoints.
+---
 
-## Environment & Configuration
+## 🧩 Components Reference
 
-- `vite.config.js` — Vite configuration and plugin registration
-- `postcss.config.js` — PostCSS for Tailwind
+### 📄 Page Components
 
-If you add environment variables for build-time configuration, create a `.env` file and reference variables as `import.meta.env.VITE_MY_VAR`. Do not commit secrets.
+| File | Role |
+|------|------|
+| `Hero.jsx` | Typewriter titles, CTA buttons, `GlowBackground`, `SocialIcons` |
+| `FutureProjects.jsx` | Roadmap cards with category icons and status emojis |
+| `About.jsx` | Bio and personal information |
+| `Skills.jsx` | Tabbed/categorized skills with `react-icons/si` brand icons |
+| `Projects.jsx` | Featured projects, category filters, GitHub & live demo links |
+| `Resume.jsx` | Resume display or download |
+| `Contact.jsx` | Contact form and reach-out details |
+| `Footer.jsx` | Footer links and branding |
+| `Navbar.jsx` | Logo, nav links, scroll styling, mobile menu trigger |
 
-## Deployment
+### 🧱 UI Primitives (`src/components/ui/`)
 
-The project builds static assets into `dist/`. Deploy the `dist/` folder to any static host such as GitHub Pages, Netlify, Vercel, or an S3 bucket + CDN.
+| File | Role |
+|------|------|
+| `Section.jsx` | Max-width container and vertical spacing for sections |
+| `SectionTitle.jsx` | Consistent heading + subtitle styling |
+| `ThemeToggle.jsx` | Sun/moon toggle wired to `ThemeContext` |
+| `MobileMenu.jsx` | Full-screen or slide-out mobile navigation |
+| `SocialIcons.jsx` | GitHub, LinkedIn, etc. icon buttons |
+| `GlowBackground.jsx` | Animated gradient blobs behind hero |
 
-Example: Deploy to Vercel
+### 🌓 Context
 
-1. Push branch to GitHub
-2. Create a new project in Vercel and point to this repository
-3. Set build command: `npm run build` and output directory `dist`
+| File | API |
+|------|-----|
+| `ThemeContext.jsx` | `ThemeProvider`, `useTheme()` → `{ theme, toggleTheme }` |
 
-Example: GitHub Pages (gh-pages)
+---
 
-1. Add a deploy step or use `gh-pages` package
-2. Ensure `base` in `vite.config.js` is set correctly for repo pages
+## 🎨 Styling & Theming
 
-## Testing & Accessibility
+### 🎨 Design Tokens (`tailwind.config.js`)
 
-- The project does not include a test harness by default. For unit tests, add `vitest` or `jest` and create tests for presentational components.
-- Use browser accessibility tools and Lighthouse audits to validate contrast, headings, and keyboard navigation.
+| Token | Usage |
+|-------|--------|
+| `dark-bg`, `dark-card`, `dark-border` | Dark mode surfaces |
+| `light-bg`, `light-card`, `light-border` | Light mode surfaces |
+| `primary-orange`, `primary-yellow` | Brand gradients & accents |
+| `glow-orange`, `glow-yellow` | Box-shadow glow effects |
+| `animation-blob` | Background blob movement |
 
-## Contributing
+### 🌓 Theme Behavior
 
-Contributions are welcome. Suggested workflow:
+- **Dark mode:** `class` strategy on `<html>` (`dark` / `light`)
+- **Persistence:** `localStorage.theme`
+- **Fallback:** `prefers-color-scheme` media query, then defaults to **dark**
+- **Toggle:** `ThemeToggle.jsx` calls `toggleTheme()` from context
 
-1. Fork the repository
-2. Create a branch (`feat/`, `fix/`, `chore/`)
-3. Open a pull request with a clear description of changes
+### 🧰 Global Utilities (`src/index.css`)
 
-Before submitting PRs, ensure:
+| Class | Purpose |
+|-------|---------|
+| `.glass` | Frosted panel (dark mode) |
+| `.glass-light` | Frosted panel (light mode) |
+| `.text-gradient` | Orange→yellow (light) / sky→purple (dark) gradient text |
+| `.animate-marquee` | Horizontal scrolling marquee |
 
-- Code builds and runs locally with `npm run dev`
-- ESLint and format rules (if present) pass
-- New UI is responsive and accessible
+---
 
-## Troubleshooting
+## 🔧 Configuration
 
-- Dev server not starting: ensure Node.js is 16+ and no process already bound to Vite port
-- Tailwind not compiling: confirm `postcss.config.js` and `tailwind.config.js` exist and `@tailwind` directives present in `index.css`
+| File | Purpose |
+|------|---------|
+| `vite.config.js` | Vite plugins (`@vitejs/plugin-react`) |
+| `tailwind.config.js` | Content paths, theme extensions, dark mode |
+| `postcss.config.js` | Tailwind + Autoprefixer pipeline |
+| `eslint.config.js` | Recommended JS + React Hooks + Refresh rules |
 
-## FAQ
+### 🔐 Environment Variables
 
-Q: Where do I change the site title and metadata?
-A: Edit `index.html` and the meta tags in `src/main.jsx` or the route-level head management you add.
+For build-time config, add a `.env` file:
 
-Q: How do I add analytics?
-A: Add the analytics snippet to `index.html` or instrument route-level events in `main.jsx`.
+```env
+VITE_APP_TITLE=My Portfolio
+```
 
-## License & Attribution
+Access in code:
 
-This project is provided under the MIT License. See `LICENSE` for details.
+```js
+import.meta.env.VITE_APP_TITLE
+```
 
-## Authors & Credits
+> ⚠️ **Never commit secrets.** Prefix public vars with `VITE_` only.
 
-- Author: FUTURE_FS_01 - Starter
-- Built with ❤️ using Vite, React, and Tailwind CSS
+---
 
-----
+## ✏️ Customization Guide
 
-If you'd like, I can also:
+### 1️⃣ Site Metadata
 
-- generate a `CONTRIBUTING.md` with contribution guidelines
-- add a live demo link and CI config for automated deployments
-- add unit tests scaffolding using `vitest`
+Edit `index.html` — update `<title>`, favicon, and meta description.
 
-Happy to proceed with any of the above — tell me which you'd like next.
+### 2️⃣ Branding & Navbar
 
+- **Logo text:** `Navbar.jsx` (search for `Rajan`)
+- **Nav links:** `navLinks` array in `Navbar.jsx`
 
-## React Compiler
+### 3️⃣ Hero Content
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- **Name, titles, CTAs:** `Hero.jsx`
+- **Typewriter words:** `words` array in the `Typewriter` component
 
-## Expanding the ESLint configuration
+### 4️⃣ Projects
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
-#   F U T U R E _ F S _ 0 1 
- 
- 
+Edit the `projects` array in `Projects.jsx`:
+
+```js
+{
+  title: "My App",
+  description: "Short description...",
+  tech: ["React", "Node.js"],
+  github: "https://github.com/you/repo",
+  external: "https://live-demo.com",
+  featured: true,
+  image: myScreenshot, // optional import from assets/
+  category: "frontend", // for filters
+}
+```
+
+Add screenshots under `src/assets/`.
+
+### 5️⃣ Skills
+
+Update `skillCategories` in `Skills.jsx` — each skill supports `name`, `level`, `desc`, and a React Icon.
+
+### 6️⃣ Social Links
+
+Configure URLs in `SocialIcons.jsx`.
+
+### 7️⃣ Colors & Fonts
+
+- **Colors:** `tailwind.config.js` → `theme.extend.colors`
+- **Font:** `src/index.css` → Google Fonts import + `font-family`
+
+---
+
+## 🚢 Deployment
+
+The build outputs static files to **`dist/`**. Deploy that folder to any static host.
+
+### ▲ Vercel
+
+1. Push to GitHub
+2. Import project on [vercel.com](https://vercel.com)
+3. **Build command:** `npm run build`
+4. **Output directory:** `dist`
+
+### 🌐 Netlify
+
+1. Connect repository
+2. **Build:** `npm run build`
+3. **Publish directory:** `dist`
+
+### 📄 GitHub Pages
+
+If deploying to `https://username.github.io/repo-name/`, set `base` in `vite.config.js`:
+
+```js
+export default defineConfig({
+  base: '/FUTURE_FS_01/',
+  plugins: [react()],
+})
+```
+
+Then build and deploy `dist/` (e.g. with `gh-pages` branch or GitHub Actions).
+
+---
+
+## ♿ Accessibility
+
+| Practice | Status |
+|----------|--------|
+| 🏷️ Semantic HTML | Sections use meaningful structure |
+| 🧭 `aria-label` on nav | Desktop navigation labeled |
+| ⌨️ Keyboard-friendly links | Hash links and buttons focusable |
+| 🌗 Contrast | Theme-aware text and backgrounds |
+
+**Recommended checks:**
+
+- Run [Lighthouse](https://developer.chrome.com/docs/lighthouse) accessibility audit
+- Test keyboard navigation through navbar and CTAs
+- Verify focus states on interactive elements
+
+---
+
+## 🤝 Contributing
+
+Contributions are welcome! 🎉
+
+1. 🍴 Fork the repository
+2. 🌿 Create a branch: `git checkout -b feat/your-feature`
+3. ✏️ Make changes and test locally (`npm run dev`)
+4. ✅ Run `npm run lint`
+5. 📤 Open a Pull Request with a clear description
+
+**PR checklist:**
+
+- [ ] Builds with `npm run build`
+- [ ] Lint passes with `npm run lint`
+- [ ] UI is responsive on mobile and desktop
+- [ ] New sections follow `Section` / `SectionTitle` patterns
+
+---
+
+## 🐛 Troubleshooting
+
+| Problem | Solution |
+|---------|----------|
+| 🚫 Dev server won't start | Ensure Node 18+, port 5173 is free |
+| 🎨 Tailwind classes missing | Confirm `@tailwind` in `index.css` and paths in `tailwind.config.js` |
+| 🌓 Theme not persisting | Check browser allows `localStorage` |
+| 🔗 Hash route shows blank | Verify `currentPage` case in `App.jsx` matches hash (no `#`) |
+| 📦 Build fails | Delete `node_modules` + `package-lock.json`, run `npm install` again |
+
+---
+
+## ❓ FAQ
+
+**Q: Where do I change the browser tab title?**  
+A: Edit `<title>` in `index.html`.
+
+**Q: How do I add Google Analytics?**  
+A: Paste the tracking snippet in `index.html` before `</head>`.
+
+**Q: Can I use React Router instead of hashes?**  
+A: Yes — install `react-router-dom`, refactor `App.jsx` and nav links; set Vite `base` if needed for hosting.
+
+**Q: Where is the resume file?**  
+A: Check `Resume.jsx` for the download link path (add your PDF to `public/` or `src/assets/`).
+
+**Q: How do I disable page transition animations?**  
+A: Remove or simplify `AnimatePresence` / `motion.div` wrappers in `App.jsx`.
+
+---
+
+## 📄 License & Credits
+
+| | |
+|---|---|
+| 📜 **License** | [MIT License](LICENSE) — free to use, modify, and distribute |
+| 👤 **Author** | [Rajan](https://github.com/Rajan-4900) |
+| 🔗 **Repository** | [github.com/Rajan-4900/FUTURE_FS_01](https://github.com/Rajan-4900/FUTURE_FS_01) |
+
+### 🙏 Built With
+
+- [Vite](https://vitejs.dev/) — Lightning-fast tooling
+- [React](https://react.dev/) — UI library
+- [Tailwind CSS](https://tailwindcss.com/) — Utility-first styling
+- [Framer Motion](https://www.framer.com/motion/) — Production-grade motion
+- [React Icons](https://react-icons.github.io/react-icons/) — Icon sets (Feather, Simple Icons, etc.)
+
+---
+
+<div align="center">
+
+**⭐ If this project helped you, consider giving it a star on GitHub!**
+
+Made with ❤️ by Rajan · © FUTURE_FS_01
+
+</div>
