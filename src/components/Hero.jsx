@@ -75,9 +75,10 @@ export default function Hero() {
             <h2 className="text-2xl md:text-4xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-primary-orange to-primary-yellow dark:from-sky-500 dark:to-purple-500 min-h-[48px]" aria-live="polite">
               <Typewriter words={[
                 "Full Stack Developer",
-                "Frontend Developer",
-                "Creative Designer",
-                "React Developer"
+                "Web Developer",
+                "UI/UX Designer",
+                "AI - Prompt Engineer",
+                "AI - Powered Full Stack Developer",
               ]} />
               <span className="sr-only">Full Stack Developer</span>
             </h2>
