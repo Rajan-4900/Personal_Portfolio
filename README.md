@@ -1,6 +1,6 @@
 <div align="center">
 
-# 🚀 FUTURE_FS_01
+# 🚀 Personal Portfolio
 
 ### ✨ Modern Developer Portfolio — Fast, Animated & Production-Ready
 
@@ -42,7 +42,7 @@
 
 ## 📌 Project Overview
 
-**FUTURE_FS_01** is a responsive, accessible **developer portfolio** and landing site built with **Vite**, **React 19**, **Tailwind CSS**, and **Framer Motion**. It uses **hash-based routing** (`#home`, `#about`, etc.) so you get multi-page feel without a router dependency — ideal for static hosting on GitHub Pages, Netlify, or Vercel.
+**Personal Portfolio** is a responsive, accessible **developer portfolio** and landing site built with **Vite**, **React 19**, **Tailwind CSS**, and **Framer Motion**. It uses **hash-based routing** (`#home`, `#about`, etc.) so you get multi-page feel without a router dependency — ideal for static hosting on GitHub Pages, Netlify, or Vercel.
 
 | | |
 |---|---|
@@ -111,17 +111,40 @@
 
 ### 📥 Installation
 
+1. 🟢 Clone the repository
+
 ```bash
-# 1️⃣ Clone the repository
 git clone https://github.com/Rajan-4900/FUTURE_FS_01.git
 cd FUTURE_FS_01
-
-# 2️⃣ Install dependencies
+```
+2. ⚙️ Install dependencies
+- npm
+```bash
 npm install
 ```
-
+- yarn
+```bash
+yarn
+```
+- pnpm
+```bash
+pnpm install
+```
+3. 🚀 Start the development server
+```bash
+npm run dev
+```
+4. 🌐 Open the app
+Open the URL shown in the terminal (typically `http://localhost:5173`).
+5. 🏗️ Build for production
+```bash
+npm run build
+```
+6. 🔍 Preview production build locally
+```bash
+npm run preview
+```
 ### 🏃 Development
-
 ```bash
 npm run dev
 ```
@@ -160,7 +183,7 @@ npm run lint
 ## 📁 Project Structure
 
 ```
-FUTURE_FS_01/
+Personal Portfolio/
 ├── 📄 index.html              # Vite HTML entry + meta tags
 ├── 📄 vite.config.js          # Vite + React plugin config
 ├── 📄 tailwind.config.js      # Theme tokens, colors, animations
@@ -488,6 +511,6 @@ A: Remove or simplify `AnimatePresence` / `motion.div` wrappers in `App.jsx`.
 
 **⭐ If this project helped you, consider giving it a star on GitHub!**
 
-Made with ❤️ by Rajan · © FUTURE_FS_01
+Made with ❤️ by Rajan · © Personal Portfolio
 
 </div>
