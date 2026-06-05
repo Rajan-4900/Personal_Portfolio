@@ -160,7 +160,7 @@ export default function Projects() {
 
   return (
     <Section id="projects" className="relative">
-      <SectionTitle title="Featured Projects" subtitle="Some Things I've Built" />
+      <SectionTitle title="Futured Projects" subtitle="Some Things I've Built" />
 
       {/* Featured Projects */}
       <div className="space-y-24 mb-24">
