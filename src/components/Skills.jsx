@@ -22,11 +22,11 @@ const skillCategories = [
     title: "Frontend Development",
     icon: <FiCode className="text-lg" />,
     skills: [
-      { name: "React.js", level: "Expert", desc: "Hooks, Context API, Redux Toolkit, Performance", icon: <SiReact className="text-3xl text-sky-400" /> },
+      { name: "React.js", level: "Intermediate", desc: "Hooks, Context API, Redux Toolkit, Performance", icon: <SiReact className="text-3xl text-sky-400" /> },
       //{ name: "Next.js", level: "Advanced", desc: "App Router, SSR, SSG, ISR, API Routes", icon: <SiNextdotjs className="text-3xl dark:text-white text-dark-bg" /> },
-      { name: "JavaScript", level: "Expert", desc: "ES6+, Async/Await, Closures, DOM Manipulation", icon: <SiJavascript className="text-3xl text-yellow-400" /> },
+      { name: "JavaScript", level: "Intermediate", desc: "ES6+, Async/Await, Closures, DOM Manipulation", icon: <SiJavascript className="text-3xl text-yellow-400" /> },
       //{ name: "TypeScript", level: "Advanced", desc: "Strict types, Generics, Interfaces, Custom types", icon: <SiTypescript className="text-3xl text-blue-500" /> },
-      { name: "Tailwind CSS", level: "Expert", desc: "Utility-first design, custom configs, animations", icon: <SiTailwindcss className="text-3xl text-sky-400" /> },
+      { name: "Tailwind CSS", level: "Intermediate", desc: "Utility-first design, custom configs, animations", icon: <SiTailwindcss className="text-3xl text-sky-400" /> },
     ],
   },
   {
@@ -47,10 +47,10 @@ const skillCategories = [
     title: "Tools & DevOps",
     icon: <FiTool className="text-lg" />,
     skills: [
-      { name: "Git & GitHub", level: "Advanced", desc: "Branching strategies, CI/CD Actions, Hooks", icon: <SiGithub className="text-3xl dark:text-white text-dark-bg" /> },
+      { name: "Git & GitHub", level: "Intermediate", desc: "Branching strategies, CI/CD Actions, Hooks", icon: <SiGithub className="text-3xl dark:text-white text-dark-bg" /> },
       { name: "Docker", level: "Intermediate", desc: "Dockerfiles, Docker-compose, Container hosting", icon: <SiDocker className="text-3xl text-blue-500" /> },
       //{ name: "Figma", level: "Intermediate", desc: "UI prototyping, Design-to-code conversions", icon: <SiFigma className="text-3xl text-purple-400" /> },
-      { name: "React Vite", level: "Advanced", desc: "Bundling, code splitting, environment configs", icon: <SiVite className="text-3xl text-purple-500" /> },
+      { name: "React Vite", level: "Intermediate", desc: "Bundling, code splitting, environment configs", icon: <SiVite className="text-3xl text-purple-500" /> },
     ],
   },
 ];
